@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.stud{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(19, 17, 17);
+}
+
+.code-editor{
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+}
+
+.code{
+    background-color: rgb(26, 26, 27);
+    padding: 1rem;
+    /* border-radius: 0rem 1rem 1rem 0rem; */
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    overflow-y: auto;
+    
+}
+.code textarea{
+    width: 100%;
+    height: calc(100% - 4rem);
+    background-color: rgb(33, 33, 36);
+    border: none;
+    padding: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    resize: vertical;
+}
+.code textarea::-webkit-scrollbar{
+    width: 0.4rem;
+    cursor: pointer;
+}
+.code textarea::-webkit-scrollbar-thumb{
+   background-color: grey;
+   border-radius: .4rem;
+}
+
+h1{
+    font: 600 1.2rem sans-serif;
+    margin: 1rem 0;
+    color: white;
+}
+
+h1>img{
+    width: 1.3rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+#result{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.code::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .code::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 12px;
+  }
+   
+  /* Handle */
+  .code::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+  }
+  
